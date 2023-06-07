@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from '@mui/material';
 
 const ToDoForm = ({ addTask }) => {
 
@@ -14,10 +15,13 @@ const ToDoForm = ({ addTask }) => {
         setUserInput("");
     }
     return (
+        <div className='App'>
         <form onSubmit={handleSubmit}>
             <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..."/>
             <button>Submit</button>
+            {/* <Button variant="contained">Submit</Button> */}
         </form>
+        </div>
     );
 };
 

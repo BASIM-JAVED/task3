@@ -5,6 +5,10 @@ import data from "./data.json";
 import Header from "./Header";
 import ToDoList from "./ToDoList";
 import ToDoForm from './ToDoForm';
+// import BackgroundVideo from './BackgroundVideo';
+import hell from './assets/hell.mp4'
+// import FixedBackgroundVideo from 'C:\Users\SPIDY\Desktop\MERN PROJECTS\task3\task3\src\FixedBackgroundVideo.css';
+
 
 function App() {
   
@@ -31,10 +35,17 @@ function App() {
   }
 
   return (
-    <div className="App">
+    
+    <div >
+      <div className='App'>
+      {/* <video src={hell} autoPlay loop muted></video> */}
+      </div>
+      {/* <BackgroundVideo/> */}
+      
       <Header />
       <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
       <ToDoForm addTask={addTask}/>
+      
     </div>
   );
 }
